@@ -65,8 +65,8 @@ Follow these steps to run the project locally.
 ## 1 Clone the Repository
 git clone https://github.com/ambalaalekhya/SecureDeFiStaking.git
 cd SecureDeFiStaking
-## 2 Install Node.js
 
+## 2 Install Node.js
 Make sure Node.js is installed:
 https://nodejs.org/
 ---
@@ -77,12 +77,15 @@ npm install
 #Compile the Smart Contract
 npx hardhat compile
 #Start Local Ethereum Blockchain
-#Open Terminal 1 and run: npx hardhat node (This starts a local Ethereum blockchain at: http://127.0.0.1:8545) [Keep this thing running]
+#Open Terminal 1 and run:
+npx hardhat node #(This starts a local Ethereum blockchain at: http://127.0.0.1:8545) [Keep this thing running]
 #Deploy the Smart Contract
-Open Terminal 2 (new window) in the project root:npx hardhat run scripts/deploy.js --network localhost (copy the deployed address You will need it to interact with system)
+Open Terminal 2 (new window) in the project root:
+npx hardhat run scripts/deploy.js --network localhost #(copy the deployed address You will need it to interact with system)
 
 #Interact With the Contract
-Open Terminal 3: npx hardhat console --network localhost (run the below code on this terminal)
+#Open Terminal 3:
+npx hardhat console --network localhost #(run the below code on this terminal)
 const staking = await ethers.getContractAt(
   "VulnerableStaking",
   "PASTE_DEPLOYED_ADDRESS_HERE" //paste the copied address here

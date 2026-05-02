@@ -26,7 +26,7 @@ contract VulnerableStaking {
 
         uint256 reward = calculateReward(msg.sender);
 
-        // ⚠️ Reentrancy Vulnerability
+        // Reentrancy Vulnerability
         payable(msg.sender).transfer(amount + reward);
 
         balances[msg.sender] -= amount;

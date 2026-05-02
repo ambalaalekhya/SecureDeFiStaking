@@ -6,7 +6,7 @@ A secure Ethereum staking DApp built with Solidity, Hardhat, and Ethers.js. User
 ---
 
 ## Live Demo
-[View on Render](https://your-render-url.onrender.com)
+[View on Render](https://securedefistaking.onrender.com/)
 
 > Note: Requires local Hardhat node running to interact with the contract.
 
@@ -123,6 +123,3 @@ Then go to `http://localhost:3000`
 This contract is protected against **reentrancy attacks** using a mutex lock pattern. The `Try Attack` button in the UI demonstrates that attack attempts are blocked.
 
 ---
-
-## Author
-ambalaalekhya
